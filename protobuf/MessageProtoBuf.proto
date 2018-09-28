@@ -1,0 +1,14 @@
+//generate protobuf: protoc -I=. --java_out=. MessageProtoBuf.proto
+//protoc -I=$SRC_DIR --java_out=$DST_DIR $SRC_DIR/addressbook.proto
+//protoc -I=protobuf --java_out=src/main/java/ protobuf/MessageProtoBuf.proto
+syntax = "proto2";
+package protobuf;
+
+message Message {
+    required string id = 1;
+    required int64 timestamp = 2;
+    required string sender = 3;
+    required string topic = 4;
+    required string content = 5;
+    required string attachments = 6;
+}

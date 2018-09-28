@@ -6,9 +6,9 @@ public class Message {
     private String sender;
     private String topic;
     private String content;
-    private byte[] attachments;
+    private String attachments;
 
-    public Message(String id, String sender, String topic, String content, byte[] attatchments) {
+    public Message(String id, String sender, String topic, String content, String attatchments) {
         this.id = id;
         this.sender = sender;
         this.topic = topic;
@@ -48,11 +48,11 @@ public class Message {
         this.content = content;
     }
 
-    public byte[] getAttachments() {
+    public String getAttachments() {
         return attachments;
     }
 
-    public void setAttachments(byte[] attachments) {
+    public void setAttachments(String attachments) {
         this.attachments = attachments;
     }
 
